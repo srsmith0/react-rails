@@ -26,6 +26,7 @@ class Api::ProductsController < ApplicationController
       render json: product.errors, status: 422
     end
   end
+end
 
   def destroy
     render json: @product.destroy
